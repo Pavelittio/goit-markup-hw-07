@@ -13,10 +13,11 @@
     text-decoration: none;
     margin-right: 93px;
 
-    /* Цвет половины логотипа */
-    &--color {
-        color: var(--main-text-color);
-    }
+}
+
+/* Цвет половины логотипа */
+.header__color {
+    color: var(--main-text-color);
 }
 
 /* Навигация */
@@ -42,22 +43,23 @@
     &:focus {
         color: var(--brend-color);
     }
-}
-
-.current {
-    color: var(--brend-color);
 
 
-    &::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        display: block;
-        width: 100%;
-        height: 4px;
-        background-color: var(--brend-color);
-        border-radius: 2px;
+    &--current {
+        color: var(--brend-color);
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: var(--brend-color);
+            border-radius: 2px;
+        }
     }
 }
 
@@ -67,7 +69,7 @@
     gap: 50px;
 
 
-    &--link {
+    &-link {
         display: flex;
         align-items: center;
         padding: 31px 0;
@@ -88,7 +90,7 @@
 }
 
 
-.header__icon--color {
+.header__icon-color {
     fill: currentColor;
 }
 
